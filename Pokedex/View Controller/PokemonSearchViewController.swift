@@ -25,7 +25,7 @@ class PokemonSearchViewController: UIViewController, UISearchBarDelegate {
     }
 
     func setUpUi() {
-        view.addVerticalGradientLayer(topColor: #colorLiteral(red: 0.9850432916, green: 0.9994240403, blue: 0.4141118905, alpha: 1), bottomColor: #colorLiteral(red: 1, green: 0.6162073065, blue: 0.3031135609, alpha: 1))
+        view.addVerticalGradientLayer(topColor: #colorLiteral(red: 0.9850432916, green: 0.9994240403, blue: 0.4141118905, alpha: 1), bottomColor: #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1))
         pokemonImageView.layer.borderColor = UIColor.blue.cgColor
         pokemonImageView.layer.borderWidth = 1.5
         pokemonImageView.layer.cornerRadius = 5
