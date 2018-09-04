@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		879CBA5F213EE9F900E46638 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879CBA5E213EE9F900E46638 /* AppDelegate.swift */; };
-		879CBA61213EE9F900E46638 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879CBA60213EE9F900E46638 /* ViewController.swift */; };
 		879CBA64213EE9F900E46638 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 879CBA62213EE9F900E46638 /* Main.storyboard */; };
 		879CBA66213EE9FA00E46638 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 879CBA65213EE9FA00E46638 /* Assets.xcassets */; };
 		879CBA69213EE9FA00E46638 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 879CBA67213EE9FA00E46638 /* LaunchScreen.storyboard */; };
+		879CBA76213EF43700E46638 /* PokemonSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879CBA75213EF43700E46638 /* PokemonSearchViewController.swift */; };
+		879CBA78213EF5D800E46638 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879CBA77213EF5D800E46638 /* Pokemon.swift */; };
+		879CBA7A213EFCFC00E46638 /* PokemonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879CBA79213EFCFC00E46638 /* PokemonController.swift */; };
+		879CBA7C213F268100E46638 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879CBA7B213F268100E46638 /* Theme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		879CBA5B213EE9F900E46638 /* Pokedex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pokedex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		879CBA5E213EE9F900E46638 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		879CBA60213EE9F900E46638 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		879CBA63213EE9F900E46638 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		879CBA65213EE9FA00E46638 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		879CBA68213EE9FA00E46638 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		879CBA6A213EE9FA00E46638 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		879CBA75213EF43700E46638 /* PokemonSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonSearchViewController.swift; sourceTree = "<group>"; };
+		879CBA77213EF5D800E46638 /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		879CBA79213EFCFC00E46638 /* PokemonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonController.swift; sourceTree = "<group>"; };
+		879CBA7B213F268100E46638 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,57 @@
 		879CBA5D213EE9F900E46638 /* Pokedex */ = {
 			isa = PBXGroup;
 			children = (
-				879CBA5E213EE9F900E46638 /* AppDelegate.swift */,
-				879CBA60213EE9F900E46638 /* ViewController.swift */,
+				879CBA74213EF3CD00E46638 /* Resources */,
+				879CBA73213EF3C700E46638 /* UI */,
+				879CBA72213EF3C000E46638 /* View Controller */,
+				879CBA71213EF3B700E46638 /* Model Controller */,
+				879CBA70213EF3AE00E46638 /* Model */,
+			);
+			path = Pokedex;
+			sourceTree = "<group>";
+		};
+		879CBA70213EF3AE00E46638 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				879CBA77213EF5D800E46638 /* Pokemon.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		879CBA71213EF3B700E46638 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				879CBA79213EFCFC00E46638 /* PokemonController.swift */,
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		879CBA72213EF3C000E46638 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				879CBA75213EF43700E46638 /* PokemonSearchViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		879CBA73213EF3C700E46638 /* UI */ = {
+			isa = PBXGroup;
+			children = (
 				879CBA62213EE9F900E46638 /* Main.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		879CBA74213EF3CD00E46638 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				879CBA5E213EE9F900E46638 /* AppDelegate.swift */,
 				879CBA65213EE9FA00E46638 /* Assets.xcassets */,
 				879CBA67213EE9FA00E46638 /* LaunchScreen.storyboard */,
 				879CBA6A213EE9FA00E46638 /* Info.plist */,
+				879CBA7B213F268100E46638 /* Theme.swift */,
 			);
-			path = Pokedex;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +184,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				879CBA61213EE9F900E46638 /* ViewController.swift in Sources */,
+				879CBA76213EF43700E46638 /* PokemonSearchViewController.swift in Sources */,
 				879CBA5F213EE9F900E46638 /* AppDelegate.swift in Sources */,
+				879CBA7C213F268100E46638 /* Theme.swift in Sources */,
+				879CBA78213EF5D800E46638 /* Pokemon.swift in Sources */,
+				879CBA7A213EFCFC00E46638 /* PokemonController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,7 +334,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 74SYWHWN72;
-				INFOPLIST_FILE = Pokedex/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Pokedex/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +352,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 74SYWHWN72;
-				INFOPLIST_FILE = Pokedex/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Pokedex/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

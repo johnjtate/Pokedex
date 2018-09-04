@@ -15,7 +15,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+//        PokemonController.shared.fetchPokemon(by: "8") { (pokemon) in
+//            print(pokemon?.name)
+//        }
+        
         return true
     }
 
